@@ -8,6 +8,7 @@ env:
 before_script:
 - npm install -g bower
 - bower install
+- node_modules/protractor/bin/webdriver-manager update
 script:
 - gulp test
 addons:
