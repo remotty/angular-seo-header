@@ -3,8 +3,8 @@ node_js:
 - '0.10'
 env:
   global:
-  - secure: E7WrOO80SNPfGRp4hW0B0vSNT5rwa/jfSEkeuCjGRHoK0WgZSJzieWO1rN+0BjUetAJYRloSLUsT8qLGPHHwU9sqAa7oSB6u0INFdjOsHfQAYfjVfqkAbN5MitsgiPIHm87GC4FbN0NH3ZQqWBqP3Ps0hLfrdPb259qZQHmxnxI=
-  - secure: eglJ7G2tVfpnETKnqv1V2uBOuh81Bg64UPwuOOhiKmkc7LoqO1CX5jZR74Q5D44V1QE2O/65NqXC3MW7ES01l0psnTob+hoLsYQip1toChWhVWW2fuZZcwCZH1myUG8gtkZL7+gTPNdphO1xQryLTkH+wMgRXvzZJUug0PJo+iY=
+  - secure: fQziee/7AlK5myB/yO83TMqyQP2TgdKmtrMJk1oycPNkdMU1XuNVUPMlgOeSjpER5ApfxaRwMOwkTa6P15n+sSI+gvhagfDmbKwObFJuWHt7xEPUIzqMPMMsKPzR8QJQGwzJE3gxa+At4NQcRu9CdBLqaR+K+felNATWHf4e9Cw=
+  - secure: XNDecwpZ1n5bOUKIK1SNb4bA06di3cOogcF7BK6Zbide7paxQlq5DEfqeVft5i9CQn7nHXjhwGFbv4rR8fbaIBkRbcM06zEHU0KUDOu3pvYjXx+KcaJdmgZbPdEMqPR9aV9Vo6VDfRcUiiKDJOOUAjWTy86VKlesEDesjawpZRM=
 before_script:
 - npm install -g bower
 - bower install
