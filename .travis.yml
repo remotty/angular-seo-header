@@ -1,10 +1,6 @@
 language: node_js
 node_js:
 - '0.10'
-env:
-  global:
-  - secure: fQziee/7AlK5myB/yO83TMqyQP2TgdKmtrMJk1oycPNkdMU1XuNVUPMlgOeSjpER5ApfxaRwMOwkTa6P15n+sSI+gvhagfDmbKwObFJuWHt7xEPUIzqMPMMsKPzR8QJQGwzJE3gxa+At4NQcRu9CdBLqaR+K+felNATWHf4e9Cw=
-  - secure: XNDecwpZ1n5bOUKIK1SNb4bA06di3cOogcF7BK6Zbide7paxQlq5DEfqeVft5i9CQn7nHXjhwGFbv4rR8fbaIBkRbcM06zEHU0KUDOu3pvYjXx+KcaJdmgZbPdEMqPR9aV9Vo6VDfRcUiiKDJOOUAjWTy86VKlesEDesjawpZRM=
 before_script:
 - npm install -g bower
 - bower install
@@ -13,3 +9,7 @@ script:
 - gulp test
 addons:
   sauce_connect: true
+env:
+  global:
+  - secure: EgIncGfN2z9rWXRx3y+zHiP16o7vnQw7OZZE+xH0F9c/6iUVfm/+p7E+tZnCRBUktFrZwJBN7r7+52TpLgozYcvGVm9YPPvGHf6sjXo3pJB8k1hxcObf3Kfh2uJNUGFuJ1X8d7Kc1Tz/JYXcbpFWUYwOuC4LO2AIpsXXzeKDM6s=
+  - secure: JiYOkGaZuK7FIJoupit9HOZ0rYg6s1H2H3Rkaqu4lkG3HDtIKPO4MD+Uz3cGHdtuB65SPuztj0j6gr+LNq/zAkDKM9F8abKmfBLu6EV4cwSG/0psfYDexudQzTLc3LQCIApD8ao+ceCHrPTXiUCqGHlfVwbdo5FBq2oEUPvLsIU=
