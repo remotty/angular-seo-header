@@ -24,6 +24,7 @@
     "node_modules"
   ],
   "devDependencies": {
+    "angular-ui-router": "~0.2.13"
   },
   "dependencies": {
     "angular": ">= 1.2.0"
