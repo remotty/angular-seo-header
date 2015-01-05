@@ -1,0 +1,28 @@
+{
+  "name": "angular-seo-header",
+  "version": "0.0.1",
+  "homepage": "https://github.com/remotty/angular-seo-header",
+  "authors": [
+    "Chungsub Kim <subicura@subicura.com>"
+  ],
+  "description": "An angular service for SEO header.",
+  "main": "dist/angular-seo-header.min.js",
+  "keywords": [
+    "SEO",
+    "angular",
+    "angularjs",
+    "title",
+    "meta",
+    "header"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "devDependencies": {
+  },
+  "dependencies": {
+    "angular": ">= 1.2.0"
+  }
+}
