@@ -11,23 +11,26 @@
       /* jshint camelcase: false */
       var opts = {
         title: {
+          default: document.title,
           prefix: '',
           postfix: ''
         }
       };
       return {
         setOptions: function (newOpts) {
-          angular.extend(opts, newOpts);
+          angular.extend(opts.title, newOpts.title);
         },
         $get: function () {
           return opts;
         }
       };
     })
-    .directive('seoTitle', ['$window', 'seoOption', function ($window, seoOption) {
+    .directive('seoTitle', ['seoOption', function (seoOption) {
       function setTitle(newTitle) {
-        $window.document.title = (seoOption.title.prefix || '') + 
-          (newTitle || '') + 
+        var title = newTitle || seoOption.title.default;
+
+        document.title = (seoOption.title.prefix || '') + 
+          (title || '') + 
           (seoOption.title.postfix || '');
       }
 
@@ -46,8 +49,11 @@
               setTitle(newTitle);
             }
           );
+
+          scope.$on('$destroy', function () {
+            setTitle();
+          });
         }
       };
-    }]
-  );
+    }]);
 })();

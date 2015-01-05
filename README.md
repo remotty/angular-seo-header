@@ -41,6 +41,15 @@ var myApp = angular.module('myApp', ['angular-seo-header']);
 
 (4) enjoy!
 
+**If you want to use with IE8**
+```
+<!--[if lt IE 9]>
+<script>
+document.createElement('seo-title');
+</script>
+<![endif]-->
+```
+
 ## Usage
 
 ### options
@@ -51,8 +60,9 @@ use `seoOptionProvider`
 .config(function (seoOptionProvider) {
   seoOptionProvider.setOptions({
     title: {
-      prefix: "homepage | ",
-      postfix: " | homepage"
+      default: "homepage",   /* default: document.title */
+      prefix: "homepage | ", /* default: "" */
+      postfix: " | homepage" /* default: "" */
     }
   });
 })
