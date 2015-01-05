@@ -1,4 +1,4 @@
-describe('default test', function() {
+describe('change test', function() {
   it('default title to "Default Title"', function() {
     browser.get('/change.html#/');
     expect(browser.executeScript('return document.title;')).toEqual('Default Title');
