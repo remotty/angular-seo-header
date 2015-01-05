@@ -1,5 +1,5 @@
 /* jshint node:true */
-
+'use strict';
 var pkg = require('./package.json');
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
