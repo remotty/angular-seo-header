@@ -1,6 +1,6 @@
 {
   "name": "angular-seo-header",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/remotty/angular-seo-header",
   "authors": [
     "Chungsub Kim <subicura@subicura.com>"
@@ -18,7 +18,10 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "bower_components"
+    "protractor.conf.js",
+    "gulpfile.js",
+    "bower_components",
+    "node_modules"
   ],
   "devDependencies": {
   },

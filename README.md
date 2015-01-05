@@ -65,13 +65,13 @@ use `seoOptionProvider`
 - use element type if you want to remove element
 
 ```html
-<seo-header-title>About</seo-header--title>
+<seo-title>About</seo-title>
 ```
 
 - use attribute type if you don't want to remove element
 
 ```html
-<h1 seo-header-title>About</h1>
+<h1 seo-title>About</h1>
 ```
 
 ## Contributing
