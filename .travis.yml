@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '0.10'
+env:
+  global:
+  - secure: E7WrOO80SNPfGRp4hW0B0vSNT5rwa/jfSEkeuCjGRHoK0WgZSJzieWO1rN+0BjUetAJYRloSLUsT8qLGPHHwU9sqAa7oSB6u0INFdjOsHfQAYfjVfqkAbN5MitsgiPIHm87GC4FbN0NH3ZQqWBqP3Ps0hLfrdPb259qZQHmxnxI=
+  - secure: eglJ7G2tVfpnETKnqv1V2uBOuh81Bg64UPwuOOhiKmkc7LoqO1CX5jZR74Q5D44V1QE2O/65NqXC3MW7ES01l0psnTob+hoLsYQip1toChWhVWW2fuZZcwCZH1myUG8gtkZL7+gTPNdphO1xQryLTkH+wMgRXvzZJUug0PJo+iY=
+before_script:
+- npm install -g bower
+- bower install
+script:
+- gulp test
+addons:
+  sauce_connect: true

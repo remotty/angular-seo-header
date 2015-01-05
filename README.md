@@ -1,4 +1,4 @@
-# angular-seo-header
+# angular-seo-header [![Build Status](https://travis-ci.org/remotty/angular-seo-header.svg?branch=master)](https://travis-ci.org/remotty/angular-seo-header)
 
 An angular plugin for SEO (Search Engine Optimization) header.
 

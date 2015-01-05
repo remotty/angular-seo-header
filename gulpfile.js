@@ -52,7 +52,7 @@ gulp.task('protractor', function() {
   var server = require('http').createServer(app)
     .listen(httpPort)
     .on('listening', function () {
-      console.log('Started connect web server on http://localhost:9000');
+      console.log('Started connect web server on http://localhost:' + httpPort);
     });
 
   gulp.src(['./test/e2e/*.js'])
