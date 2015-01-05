@@ -1,6 +1,7 @@
 describe('change test', function() {
   it('default title to "Default Title"', function() {
     browser.get('/change.html#/');
+    browser.sleep(1000);
     expect(browser.executeScript('return document.title;')).toEqual('Default Title');
   });
 
