@@ -84,6 +84,18 @@ use `seoOptionProvider`
 <h1 seo-title>About</h1>
 ```
 
+### service
+
+(1) set title
+
+```js
+angular.module('testApp', ['angular-seo-header'])
+  .controller('TestController', ['seoService', function(seoService) {
+    seoService.setTitle('new title');
+  }]);
+```
+
+
 ## Contributing
 
 1. Fork it ( https://github.com/remotty/angular-seo-header/fork )

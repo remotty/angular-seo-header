@@ -20,6 +20,7 @@ angular.module('testApp', ['angular-seo-header', 'ui.router'])
         templateUrl: '/views/main.html'
       })
   })
-  .controller('TestController', ['$scope', function($scope) {
-    $scope.title = "Change Title";
+  .controller('TestController', ['$scope', 'seoService', function($scope, seoService) {
+    //$scope.title = "Change Title";
+    seoService.setTitle('new title');
   }]);

@@ -25,15 +25,18 @@
         }
       };
     })
-    .directive('seoTitle', ['seoOption', function (seoOption) {
-      function setTitle(newTitle) {
+    .service('seoService', ['seoOption', function (seoOption) {
+      var $this = this;
+
+      $this.setTitle = function(newTitle) {
         var title = newTitle || seoOption.title.default;
 
         document.title = (seoOption.title.prefix || '') + 
           (title || '') + 
           (seoOption.title.postfix || '');
-      }
-
+      };
+    }])
+    .directive('seoTitle', ['seoService', function (seoService) {
       return {
         restrict: 'AE',
         link: function (scope, element, attrs) {
@@ -46,12 +49,12 @@
               return element.text();
             },
             function (newTitle) {
-              setTitle(newTitle);
+              seoService.setTitle(newTitle);
             }
           );
 
           scope.$on('$destroy', function () {
-            setTitle();
+            seoService.setTitle();
           });
         }
       };
