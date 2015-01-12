@@ -11,9 +11,9 @@
       /* jshint camelcase: false */
       var opts = {
         title: {
-          default: document.title,
-          prefix: '',
-          postfix: ''
+          'default': document.title,
+          'prefix': '',
+          'postfix': ''
         }
       };
       return {
@@ -29,7 +29,7 @@
       var $this = this;
 
       $this.setTitle = function(newTitle) {
-        var title = newTitle || seoOption.title.default;
+        var title = newTitle || seoOption.title['default'];
 
         document.title = (seoOption.title.prefix || '') + 
           (title || '') + 
