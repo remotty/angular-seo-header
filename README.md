@@ -3,8 +3,7 @@
 An angular plugin for SEO (Search Engine Optimization) header.
 
 - dynamic document title
-- dynamic meta tag (not yet)
-- dynamic header (link...) (not yet)
+- dynamic header (meta tag, ...)
 
 inspired by [angularjs-viewhead](https://github.com/apparentlymart/angularjs-viewhead).
 
@@ -82,6 +81,13 @@ use `seoOptionProvider`
 
 ```html
 <h1 seo-title>About</h1>
+```
+
+(2) add meta tag to header
+
+```html
+<meta property="og:type" content="article" seo-head></meta>
+<meta property="og:title" content="{{ title }}" seo-head></meta>
 ```
 
 ### service

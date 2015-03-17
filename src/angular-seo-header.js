@@ -58,5 +58,17 @@
           });
         }
       };
-    }]);
+    }])
+    .directive('seoHead', function () {
+      return {
+        restrict: 'A',
+        link: function (scope, element) {
+          angular.element('head').append(element);
+
+          scope.$on('$destroy', function () {
+            element.remove();
+          });
+        }
+      };
+    });
 })();
