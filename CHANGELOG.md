@@ -1,5 +1,9 @@
 # angular-seo-header
 
+## 0.1.1
+
+ * support unique meta tag by property
+ 
 ## 0.1.0
 
  * support header tag

@@ -1,11 +1,11 @@
 {
   "name": "angular-seo-header",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "devDependencies": {
     "del": "^0.1.0",
     "gulp": "^3.6.0",
     "gulp-header": "^1.2.2",
-    "gulp-jshint": "^1.5.3",
+    "gulp-jshint": "^1.10.0",
     "gulp-load-plugins": "^0.7.1",
     "gulp-protractor": "^0.0.12",
     "gulp-rename": "^1.2.0",

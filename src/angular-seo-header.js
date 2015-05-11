@@ -63,6 +63,15 @@
       return {
         restrict: 'A',
         link: function (scope, element) {
+          if(element.attr('property')) {
+            var metas = angular.element.find('meta');
+            for(var i=0; i<metas.length; i++) { // unique meta property
+              if (element.attr('property') == angular.element(metas[i]).attr('property')) {
+                angular.element(metas[i]).remove();
+              }
+            }
+          }
+          
           angular.element('head').append(element);
 
           scope.$on('$destroy', function () {
